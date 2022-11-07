@@ -1,0 +1,21 @@
+/* PAGE INPUT */
+
+.page-input-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* HISTORY */
+
+.history-list {
+    border-radius: 20px;
+    background-color: aquamarine;
+    padding: 20px 20px;
+}
+
+.history-list__elem {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}

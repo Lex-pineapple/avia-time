@@ -12,13 +12,20 @@
   <div class="page-wrapper">
     <div class="page-input-wrapper">
       <input type="date" name="date-start" id="date-start" class="date-picker--start">
-      <input type="text" name="time-start" id="time-start" class="time-picker--start" maxlength="4">
-      <button class="button button--add">+</button>
-      <button class="button button--substr">-</button>
-      <input type="text" name="time-to-add" id="time-to-add" class="time-to-add" maxlength="4">
-      <p class="show-time"></p>
+      <input type="text" name="time-start" id="time-start" class="time-picker--start" maxlength="4" placeholder="HHMM">
+      <div class="button--wrapper">
+        <button class="button button--add">+</button>
+        <button class="button button--substr">-</button>
+      </div>
+      <input type="text" name="time-to-add" id="time-to-add" class="time-to-add" maxlength="4" placeholder="HHMM">
     </div>
-    <ul class="history-list"></ul>
+    <ul class="history-list">
+      <li class="history-list__header">
+        <p class="history-list__header--before">Before addition</p>
+        <p class="history-list__header--add-time">Time added</p>
+        <p class="history-list__header--after">After addition</p>
+      </li>
+    </ul>
   </div>
   <script type="module" src="script.js"></script>
 </body>

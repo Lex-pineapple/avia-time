@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="style.css">
   <title>Avia Time Calculator</title>
 </head>
 <body>
   <div class="page-wrapper">
-     <input type="date" name="date-start" id="date-start" class="date-picker--start">
-     <input type="text" name="time-start" id="time-start" class="time-picker--start" maxlength="4">
-     <button class="button button--add">+</button>
-     <button class="button button--substr">-</button>
-     <input type="text" name="time-to-add" id="time-to-add" class="time-to-add">
-     <p class="show-time"></p>
+    <div class="page-input-wrapper">
+      <input type="date" name="date-start" id="date-start" class="date-picker--start">
+      <input type="text" name="time-start" id="time-start" class="time-picker--start" maxlength="4">
+      <button class="button button--add">+</button>
+      <button class="button button--substr">-</button>
+      <input type="text" name="time-to-add" id="time-to-add" class="time-to-add" maxlength="4">
+      <p class="show-time"></p>
+    </div>
+    <ul class="history-list"></ul>
   </div>
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
